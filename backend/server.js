@@ -12,7 +12,10 @@ const postRouter = require('./routes/postRoute')
 connectDB()
 
 //Middleware
-app.use(cors());
+app.use(cors({
+  origin: 'https://social-media-vert-nine.vercel.app', // replace with your real frontend URL
+  credentials: true
+}));
 app.use(express.json());
 
 //Route
