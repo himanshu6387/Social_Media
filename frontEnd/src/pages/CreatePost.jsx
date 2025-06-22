@@ -28,7 +28,7 @@ const CreatePost = () => {
     // console.log(inputs)
     try {
       const id = localStorage.getItem('userId');
-      const {data} = await axios.post('http://localhost:8080/post/create-Post',{
+      const {data} = await axios.post('https://social-media-backendd.onrender.com/post/create-Post',{
         title:inputs.title,
         description:inputs.description,
         image:inputs.image, 

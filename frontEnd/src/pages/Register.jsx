@@ -26,7 +26,7 @@ const Register = () => {
     e.preventDefault();
     // console.log(inputs)
     try {
-      const {data} = await axios.post('http://localhost:8080/user/register',{
+      const {data} = await axios.post('https://social-media-backendd.onrender.com/user/register',{
         username:inputs.name,
         email:inputs.email,
         password:inputs.password

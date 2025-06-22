@@ -8,7 +8,7 @@ const Posts = () => {
 
   const getAllPost = async () => {
     try {
-      const { data } = await axios.get('http://localhost:8080/post/getAll-Post');
+      const { data } = await axios.get('https://social-media-backendd.onrender.com/post/getAll-Post');
       if (data?.success) {
         setPosts(data?.allPost);
       }

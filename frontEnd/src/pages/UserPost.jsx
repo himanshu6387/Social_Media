@@ -10,7 +10,7 @@ const UserPost = () => {
     const getUserPost = async () => {
         try {
             const id = localStorage.getItem('userId');
-            const { data } = await axios.get(`http://localhost:8080/post/getPost/${id}`)
+            const { data } = await axios.get(`https://social-media-backendd.onrender.com/post/getPost/${id}`)
             // console.log(data)
             if (data?.success) {
                 setPosts(data?.post)

@@ -23,7 +23,7 @@ export default function PostCard({ title, description, image, username, time, is
 
   const handleDelete = async () => {
     try {
-      const { data } = await axios.delete(`http://localhost:8080/post/delete-Post/${id}`);
+      const { data } = await axios.delete(`https://social-media-backendd.onrender.com/post/delete-Post/${id}`);
       if (data?.success) {
         alert('Post Deleted Successfully..');
         navigate('/my-post');

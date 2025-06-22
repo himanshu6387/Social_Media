@@ -14,7 +14,7 @@ const PostDetails = () => {
 
     const getPostDetails = async () => {
         try {
-          const { data } = await axios.get(`http://localhost:8080/post/getPost/${id}`);
+          const { data } = await axios.get(`https://social-media-backendd.onrender.com/post/getPost/${id}`);
         //   console.log("API Response:", data);
           if (data?.success) {
             setPost(data?.post);
